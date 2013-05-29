@@ -1,0 +1,38 @@
+#ifndef __PACKET_DEFINE_H__
+#define __PACKET_DEFINE_H__
+
+namespace Packets
+{
+	enum PACKET_DEFINE
+	{
+		PACKET_NONE = 0,
+		
+		PACKET_GC_TEST,
+		//其他客户端连接
+		PACKET_IMX_GC_OTHERCLIENTCONNECT,
+		PACKET_IMX_GC_OTHERCLIENTDISCONNECT,
+		PACKET_IMX_GC_CLIENTCHANGELOCATION,
+		PACKET_IMX_GC_CLIENTCONNNECTSUCCESS,
+		PACKET_IMX_LC_CONNECTINFO,
+		
+
+		PACKET_IMX_GC_OTHERCLIENTCONNECT_EX,
+
+		//-------------------LC---------------
+		PACKET_LC_RETLOGIN = 400,
+
+		//-------------------CL---------------
+		//客户端请求Login登录
+		PACKET_CL_ASKLOGIN = 450,
+
+		//-----------SG---------GS-------------
+		PACKET_IMX_GS_CONNECT = 451,	
+		PACKET_IMX_SG_RETCONNECT = 452,
+
+		PACKET_IMX_CG_POSITION = 755,
+		PACKET_IMX_CG_POSITION_EX = 756,
+		//消息类型的最大值
+		PACKET_MAX
+	};
+};
+#endif
