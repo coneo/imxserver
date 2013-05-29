@@ -1,0 +1,7 @@
+#!/bin/sh
+
+GATEWAYSERVER="GatewayServer"
+SCENESERVER="SceneServer"
+
+ps -ef|grep GatewayServer | awk '{print $2}' | xargs kill
+ps -ef|grep SceneServer   | awk '{print $2}' | xargs kill
