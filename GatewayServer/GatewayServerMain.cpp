@@ -4,7 +4,7 @@
 
 int main( )
 {
-	g_pLog = new Log("gatewaylogConfig.xml");
+	g_pLog = new Log("Config/gatewaylogConfig.xml");
 	if(!g_pLog)
 	{
 		Assert(false);	

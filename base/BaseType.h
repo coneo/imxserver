@@ -74,6 +74,8 @@ typedef UCHAR				BYTE;
 #define PACK_COMPART "$-$"   	//封包分隔符
 #define PACK_COMPART_SIZE	strlen(PACK_COMPART)
 
+#define OVER_MAX_SERVER 256
+
 /******
 *\清楚内存操作
 *
